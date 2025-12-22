@@ -1,0 +1,50 @@
+*{
+    margin:0;
+    padding:0;
+    text-align:center;
+}
+
+
+
+img{
+    height:3vh;
+    vertical-align: middle;
+}
+
+header{
+    font-size:7vmin;
+    margin-top:5vh;
+}
+
+select{
+    width:100px;
+}
+
+body{
+    display:flex;
+    flex-direction:column;
+    height:100vh;
+    align-items:center;
+    gap:10vh;
+    background-color:powderblue;
+}
+
+.container{
+    display:flex;
+    flex-direction:column;
+    height:20vh;
+    width:70vw;
+    align-items:center;
+    justify-content:space-evenly;
+    border:1px solid black;
+    border-radius:10%;
+}
+
+
+.currenceis{
+    display:flex;
+    flex-direction:row;
+    width:60vw;
+    justify-content:space-evenly;
+
+}

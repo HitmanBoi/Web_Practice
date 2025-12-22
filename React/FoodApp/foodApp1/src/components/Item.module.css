@@ -1,0 +1,8 @@
+.item{
+    display:flex;
+    border:2px solid gray;
+    justify-content:space-between;
+    margin:5px;
+    padding:5px;
+}
+

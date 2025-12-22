@@ -1,0 +1,14 @@
+.mainContainer{
+    text-align:center;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    padding:20px
+}
+.calculator {
+    border: 2px solid gray;
+    width:200px;
+    border-radius:5px;
+}
+

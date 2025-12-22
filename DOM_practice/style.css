@@ -1,0 +1,33 @@
+.c1{
+    height:100px;
+    width:100px;
+    border: 1px solid black;
+    margin:5px;
+    text-align:center;
+    background-color: cyan;
+}
+
+.c2{
+    height:100px;
+    width:100px;
+    border: 1px solid black;
+    margin:5px;
+    text-align:center;
+    color: red;
+}
+
+#btn{
+    margin-left:85vw;
+}
+
+.darkMode{
+    background-color:black;
+    color:white;
+}
+
+
+
+.lightMode{
+    color:black;
+}
+

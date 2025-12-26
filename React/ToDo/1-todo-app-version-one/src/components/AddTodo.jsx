@@ -1,15 +1,15 @@
 function AddTodo() {
   return (
-    <div class="container text-center">
-      <div class="row kk-row">
-        <div class="col-6">
+    <div className="container text-center">
+      <div className="row kk-row">
+        <div className="col-6">
           <input type="text" placeholder="Enter Task Here" />
         </div>
-        <div class="col-4">
+        <div className="col-4">
           <input type="datetime-local" />
         </div>
-        <div class="col-2">
-          <button type="button" class="btn btn-success kk-button">
+        <div className="col-2">
+          <button type="button" className="btn btn-success kk-button">
             Add
           </button>
         </div>

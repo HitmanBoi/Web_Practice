@@ -26,10 +26,10 @@ const resetGame = () => {
     turn0 = true;
     for (box of boxes){
         box.innerText="";
-        box.classList.remove('boxRed');
-        box.classList.remove('boxBlue');
+        box.classNameList.remove('boxRed');
+        box.classNameList.remove('boxBlue');
     }
-    msgContainer.classList.add('hide');
+    msgContainer.classNameList.add('hide');
 }
 
 const disableBoxes = () => {
@@ -47,11 +47,11 @@ const enableBoxes = () => {
 const showWinner = (winner) => {
     if(winner==="Draw"){
         msgp.innerText = `Game ${winner}`;
-        msgContainer.classList.remove('hide');
+        msgContainer.classNameList.remove('hide');
         return
     }
     msgp.innerText = `Winner is ${winner}`;
-    msgContainer.classList.remove('hide');
+    msgContainer.classNameList.remove('hide');
 
 }
 
@@ -82,11 +82,11 @@ boxes.forEach((box) => {
         boxClick ++;
         if (turn0) {
             box.innerText="O";
-            box.classList.add('boxRed')
+            box.classNameList.add('boxRed')
             turn0 = false;
         }else {
             box.innerText="X";
-            box.classList.add('boxBlue')
+            box.classNameList.add('boxBlue')
             turn0 = true;  
         }
         checkWin()

@@ -42,25 +42,25 @@ const updateScore = () => {
 const showResult = (c1,c2,w) => {
     if(w === 'user'){
         result.innerText = `${c1} beats ${c2} , You win!`;
-        result.classList.remove('hide','Opponent','ptsHeading');
-        result.classList.add('You');
+        result.classNameList.remove('hide','Opponent','ptsHeading');
+        result.classNameList.add('You');
     }else if(w === 'opponent'){
         result.innerText = `${c2} beats ${c1} , Opponent win!`;
-        result.classList.remove('hide','You','ptsHeading');
-        result.classList.add('Opponent');   
+        result.classNameList.remove('hide','You','ptsHeading');
+        result.classNameList.add('Opponent');   
     }else{
         result.innerText = `Both chose ${c1} , its a Draw`;
-        result.classList.remove('hide','You','Opponent');
-        result.classList.add('ptsHeading');
+        result.classNameList.remove('hide','You','Opponent');
+        result.classNameList.add('ptsHeading');
     }
 }
 
 
 choice.forEach(w => {
     w.addEventListener("click" , () =>{
-        user.choice = w.classList[1];
+        user.choice = w.classNameList[1];
         console.log(`user : ${user.choice} `);
-        opponent.choice = choice[Math.floor(Math.random()*3)].classList[1];
+        opponent.choice = choice[Math.floor(Math.random()*3)].classNameList[1];
         console.log(`opponent : ${opponent.choice} `);
         checkWinner(user.choice , opponent.choice);
         updateScore();

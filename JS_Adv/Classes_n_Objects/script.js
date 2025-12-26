@@ -1,4 +1,4 @@
-class TCar {
+className TCar {
     constructor() {
         this.baseSpeed = '100';
         this.sound = 'vroom';
@@ -16,7 +16,7 @@ KTM.vroom();
 
 Data = 'Data Dekho'
 
-class User {
+className User {
     constructor(userName,userEmail) {
         this.uName = userName ;
         this.uMail = userEmail ;
@@ -31,7 +31,7 @@ empObj = new User('kamal','k@k.com');
 
 empObj.viewData();
 
-class Admin extends User {
+className Admin extends User {
     updateData(newData) {
         Data = newData;
     }

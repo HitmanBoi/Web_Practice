@@ -1,19 +1,17 @@
-function ToDoItem({todoName , todoDate}) {
-    return (
-    <div class="container">
-        <div class="row kk-row">
-          <div class="col-6">
-            {todoName}
-          </div>
-          <div class="col-4">
-            {todoDate}
-          </div>
-          <div class="col-2">
-            <button type="button" class="btn btn-danger kk-button">Delete</button>
-          </div>
+function ToDoItem({ todoName, todoDate }) {
+  return (
+    <div className="container">
+      <div className="row kk-row">
+        <div className="col-6">{todoName}</div>
+        <div className="col-4">{todoDate}</div>
+        <div className="col-2">
+          <button type="button" className="btn btn-danger kk-button">
+            Delete
+          </button>
         </div>
       </div>
-    );
+    </div>
+  );
 }
 
 export default ToDoItem;

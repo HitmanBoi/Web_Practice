@@ -4,18 +4,15 @@ import ToDoItem1 from "./components/TodoItem1";
 import ToDoItem2 from "./components/TodoItem2";
 import "./App.css";
 
-
-
 function App() {
   return (
     <center className="todo">
-      <AppName/>
-      <AddTodo/>
+      <AppName />
+      <AddTodo />
       <div className="items">
-        <ToDoItem1/>
-        <ToDoItem2/>
+        <ToDoItem1 />
+        <ToDoItem2 />
       </div>
-
     </center>
   );
 }

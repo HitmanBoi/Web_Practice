@@ -2,30 +2,30 @@
 // console.dir(p);
 // console.log(p);
 
-// console.dir(p.classList);
+// console.dir(p.classNameList);
 
-// console.log(p.classList);
+// console.log(p.classNameList);
 
 
 btn1 = document.querySelector('#btn');
 body = document.querySelector('body');
 currMode = 'Light';
-btn1.classList.add('darkMode');
+btn1.classNameList.add('darkMode');
 
 btn1.addEventListener("click",() => {
     if (currMode === 'Light') {
-        body.classList.add('darkMode');
-        body.classList.remove('lightMode');
-        btn1.classList.add('lightMode');
-        btn1.classList.remove('darkMode');
+        body.classNameList.add('darkMode');
+        body.classNameList.remove('lightMode');
+        btn1.classNameList.add('lightMode');
+        btn1.classNameList.remove('darkMode');
         btn1.innerText = 'Switch to Light Mode';
         currMode = 'Dark';
         console.log(currMode);
     } else {
-        body.classList.remove('darkMode');
-        body.classList.add('lightMode');
-        btn1.classList.add('darkMode');
-        btn1.classList.remove('lightMode');
+        body.classNameList.remove('darkMode');
+        body.classNameList.add('lightMode');
+        btn1.classNameList.add('darkMode');
+        btn1.classNameList.remove('lightMode');
         btn1.innerText = 'Switch to Dark Mode';
         currMode = 'Light';
         console.log(currMode);

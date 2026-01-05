@@ -5,18 +5,30 @@ import WelcomePage from "./WelcomePage";
 import { useEffect } from "react";
 import Loader from "./Loader";
 import { useState } from "react";
+import { useLoaderData } from "react-router-dom";
 
 const PostList = () => {
-  const { postList, isLoading } = useContext(PostListData);
+  const {  isLoading } = useContext(PostListData);
+
+  const postList = useLoaderData();
+
+
 
   return (
     <>
-      {isLoading && <Loader />}
-      {!isLoading && postList.length === 0 && <WelcomePage />}
-      {!isLoading &&
-        postList.map((post) => <Post key={post.id} data={post}></Post>)}
+      
+      {postList.length === 0 && <WelcomePage />}
+      {postList.map((post) => <Post key={post.id} data={post}></Post>)}
     </>
   );
 };
+
+export const postLoader = () => {
+  return fetch("https://dummyjson.com/posts")
+        .then((res) => res.json())
+        .then((data) => {
+          return data.posts          
+        });
+}
 
 export default PostList;

@@ -16,8 +16,7 @@ const Post = ({data}) => {
          {data.content || data.body}
         </p>
         Tags:
-        console.log(data.tags)
-        {/* {data.tags.map((tag)=> <span className="badge text-bg-primary hashtag" key={tag}>{tag}</span>)} */}
+        {data.tags.map((tag)=> <span className="badge text-bg-primary hashtag" key={tag}>{tag}</span>)} 
 
         <div className="alert alert-success reactions" role="alert">
           {data.reaction || data.reactions.likes } people reacted on this post.
